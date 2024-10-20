@@ -1,14 +1,40 @@
-.{
-margin:0;
-padding:0;
-}
+
 
 body{
     background-image: url("bg.jpg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom;
-   /* background-position: top; */
-    /* background-size: cover; */
-    background-color: black;
+    
+    background-size: cover;
+    background-color: black; */
+}
+img{
+    width: 12rem;
+    position: absolute;
+    bottom: 0;
+}
+#b1{
+    left: 0%;
+}
+#b2{
+    left: 10%;
+}
+#b3{
+    left: 50%;
+}
+#b4{
+    left: 70%;
+}
+#b5{
+    left: 30%;
+}
+#b6{
+    left: 10%;
+}
+#b7{
+    right: 30%;
+}
+#b8{
+    right: 30%;
 }
