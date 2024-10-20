@@ -1,4 +1,6 @@
-
+html{
+    cursor: crosshair;
+}
 
 body{
     background-image: url("bg.jpg");
