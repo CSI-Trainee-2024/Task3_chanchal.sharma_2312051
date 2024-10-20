@@ -3,27 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./custom.js"></script>
-    <title>Duck Hunter</title>
+    <link rel="stylesheet" href="./style1.css">
+    <title>Game: Duck Hunter</title>
 </head>
 <body>
-    <!-- <img src="/bird/bb1.gif" alt="bird1"> -->
-    <img id="b1"  src="/bird/bb2.gif" alt="bird2">
-    <img id="b2"  src="/bird/bb2.gif" alt="bird2">
-    <!-- <img src="/bird/bb3.gif" alt="bird3">  -->
-    <img id="b3"  src="/bird/bb4.gif" alt="bird4">
-    <img id="b4"  src="/bird/bb4.gif" alt="bird4">
-    <img id="b5"  src="/bird/bb5.gif" alt="bird5">
-    <img id="b6"  src="/bird/bb5.gif" alt="bird5">
-    <img id="b7"  src="/bird/bb6.gif" alt="bird6">  
-    <img id="b8"  src="/bird/bb6.gif" alt="bird6">  
- <div id="score">Score:<span id="currentScore"></span>
- </div>
- <div id="bullets">Bullets:<span id="currentBullets"></span>
- </div>
-<audio id="fire">
-    <source src="shot.mp3" type="audio/mp3">
-</audio>
+    <div class="game-start-page">
+        <h1 class="game-title">Duck Hunter</h1>
+        <button class="play-button" onclick="startGame()">Play Now</button>
+    </div>
+
+    <script>
+        function startGame() {
+            window.location.href = 'game.html';
+        }
+    </script>
 </body>
 </html>
