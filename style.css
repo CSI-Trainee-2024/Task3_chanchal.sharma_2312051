@@ -7,34 +7,121 @@ body{
     background-position: bottom;
     
     background-size: cover;
-    background-color: black; */
+    /* background-color: black; */ 
+    overflow: hidden;
 }
 img{
-    width: 12rem;
+    width: 10rem;
     position: absolute;
-    bottom: 0;
+    bottom: 20%;
+    animation-fill-mode: forwards;
 }
 #b1{
     left: 0%;
+    animation-name: bird1;
+    animation-duration: 6s;
 }
 #b2{
     left: 10%;
+    animation-name: bird2;
+    animation-duration: 10s;
 }
 #b3{
     left: 50%;
+    transform: scaleX(-1);
+    animation-name: bird3;
+    animation-duration: 5s;
 }
 #b4{
     left: 70%;
+    transform: scaleX(-1);
+    animation-name: bird4;
+    animation-duration: 15s;
 }
 #b5{
     left: 30%;
+    transform: scaleX(-1);
+    animation-name: bird5;
+    animation-duration: 6s;
 }
 #b6{
     left: 10%;
+    transform: scaleX(-1);
+    animation-name: bird6;
+    animation-duration: 8s;
 }
 #b7{
     right: 30%;
+    transform: scaleX(-1);
+    animation-name: bird7;
+    animation-duration: 12s;
 }
 #b8{
     right: 30%;
+    transform: scaleX(-1);
+    animation-name: bird8;
+    animation-duration: 15s;
 }
+
+
+
+@keyframes bird1{
+    10% {left: 20%; bottom: 30%}
+    30% {left: 30%; bottom: 50%}
+    50% {left: 40%; bottom: 70%}
+    70% {left: 60%; bottom: 30%}
+    100%{left: 100%; bottom: 100%}
+}
+@keyframes bird2{
+    0% {left: 10%; bottom: 90%}
+    20% {left: 20%; bottom: 30%}
+    60% {left: 25%; bottom: 60%}
+    80% {left: 90%; bottom: 80%}
+    100%{left: 100%; bottom: 50%}
+}
+ @keyframes bird3{
+    0% {left: 15%; bottom: 10%}
+    20% {left: 30%; bottom: 30%}
+    60% {left: 45%; bottom: 50%}
+    80% {left: 90%; bottom: 70%}
+    100%{left: 100%; bottom: 30%}
+}
+
+ @keyframes bird4{
+    10% {left: 70%; bottom: 30%}
+    30% {left: 70%; bottom: 50%}
+    50% {left: 80%; bottom: 70%}
+    70% {left: 90%; bottom: 40%}
+    100%{left: 100%; bottom: 20%}
+}
+    
+@keyframes bird5{
+    10% {left: 70%; bottom: 30%}
+    30% {left: 70%; bottom: 50%}
+    50% {left: 80%; bottom: 70%}
+    70% {left: 90%; bottom: 40%}
+    100%{left: 100%; bottom: 20%}
+}
+    
+@keyframes bird6{
+    0% {left: 15%; bottom: 10%}
+    20% {left: 30%; bottom: 30%}
+    60% {left: 45%; bottom: 50%}
+    80% {left: 90%; bottom: 70%}
+    100%{left: 100%; bottom: 30%}
+}
+    
+@keyframes bird7{
+    10% {right: 20%; bottom: 30%}
+    30% {right: 70%; bottom: 50%}
+    50% {right: 80%; bottom: 70%}
+    70% {right: 90%; bottom: 40%}
+    100%{right: 100%; bottom: 20%}
+}
+@keyframes bird8{
+    10% {right: 32%; bottom: 30%}
+    30% {right: 30%; bottom: 50%}
+    50% {right: 40%; bottom: 70%}
+    70% {right: 60%; bottom: 30%}
+    100%{right: 100%; bottom: 100%}
+} 
