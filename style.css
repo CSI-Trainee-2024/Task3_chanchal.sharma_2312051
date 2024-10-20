@@ -16,6 +16,24 @@ img{
     bottom: 20%;
     animation-fill-mode: forwards;
 }
+
+#score{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    color:#fff;
+    font-size:3rem;
+}
+#bullets{
+    position: absolute;
+    color:#fff;
+    font-size:3rem;
+    left:1.5rem;
+    bottom:1.5rem;
+    
+
+}
+
 #b1{
     left: 0%;
     animation-name: bird1;
