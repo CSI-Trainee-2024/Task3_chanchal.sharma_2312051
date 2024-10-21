@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
+    <title>Game Over</title>
+   
+</head>
+<body>
+    <div class="game-over-container">
+        <h1>Game Over!</h1>
+        <p>Your final score: <span id="finalScore"></span></p>
+        <p>Total missed shots: <span id="finalMissedShots"></span></p>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+
+    <script>
+    
+        document.getElementById('finalScore').textContent = localStorage.getItem('shotBirds') || 0;
+        document.getElementById('finalMissedShots').textContent = localStorage.getItem('missedShots') || 0;
+
+        function restartGame() {
+            localStorage.removeItem('shotBirds');
+            localStorage.removeItem('missedShots');
+            window.location.href = 'index.html'; 
+        }
+    </script>
+</body>
+</html>
+
